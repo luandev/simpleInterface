@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleInterface", "simpleInterface\simpleInterface.csproj", "{0BB03B07-0C2D-45F2-B8DF-EB284A97BAC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simInterface", "simInterface\simInterface.csproj", "{080BBFBC-292E-475B-ABD7-99046A367905}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BB03B07-0C2D-45F2-B8DF-EB284A97BAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BB03B07-0C2D-45F2-B8DF-EB284A97BAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BB03B07-0C2D-45F2-B8DF-EB284A97BAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BB03B07-0C2D-45F2-B8DF-EB284A97BAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080BBFBC-292E-475B-ABD7-99046A367905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080BBFBC-292E-475B-ABD7-99046A367905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080BBFBC-292E-475B-ABD7-99046A367905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080BBFBC-292E-475B-ABD7-99046A367905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

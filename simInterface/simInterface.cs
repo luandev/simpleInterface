@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
-namespace simpleInterface
+namespace simInterface
 {
     public class simInterface
     {
@@ -128,8 +124,8 @@ namespace simpleInterface
 
                         Console.WriteLine();
                         Console.WriteLine();
-                        
-                        while(sleepTimer.ElapsedMilliseconds < (1000/FPS))
+
+                        while (sleepTimer.ElapsedMilliseconds < (1000 / FPS))
                         {
 
                         }

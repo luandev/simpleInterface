@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>simpleInterface</id>
+    <version>1.0.0</version>
+    <authors>luandev</authors>
+    <owners>luandev</owners>
+    <licenseUrl>https://raw.githubusercontent.com/luandev/simpleInterface/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/luandev/simpleInterface</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/luandev/simpleInterface/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Easy way to create simple loop interfaces with console Applications</description>
+    <releaseNotes>Project in preview stage.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>console c# interface UI simple</tags>
+    <dependencies>
+      
+    </dependencies>
+    <references>
+      <reference file="simpleInterface.dll" />
+    </references>
+  </metadata>
+
+  <files>
+    <file src="simpleInterface\bin\Release\simpleInterface.dll" target="lib"/>
+  </files>
+</package>
