@@ -14,14 +14,16 @@
     <copyright>Copyright 2017</copyright>
     <tags>console c# interface UI simple</tags>
     <dependencies>
-      
+      <dependency id="System.Runtime" version="4.3.0" />
+      <dependency id="System.Collections.Concurrent" version="4.3.0" />
+      <dependency id="System.Threading.Tasks" version="4.3.0" />
     </dependencies>
     <references>
-      <reference file="simpleInterface.dll" />
+      <reference file="simInterface.dll" />
     </references>
   </metadata>
 
   <files>
-    <file src="simpleInterface\bin\Release\simpleInterface.dll" target="lib"/>
+    <file src="luandev\bin\Release\simInterface.dll" target="lib"/>
   </files>
 </package>
