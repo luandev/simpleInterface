@@ -33,7 +33,7 @@ namespace luanDevTools
             }
             set
             {
-                lock (lockpad) { _totalValue = Convert.ToInt32(value); }
+                lock (lockpad) { _totalValue = Convert.ToInt32((value == 0)? 1 : value); }
             }
         }
         public bool isDrawing { get; set; }
@@ -64,7 +64,7 @@ namespace luanDevTools
             header = Header;
             FPS = fps;
 
-            Task.Factory.StartNew(redraw, TaskCreationOptions.LongRunning).Wait();
+            Task.Factory.StartNew(redraw, TaskCreationOptions.LongRunning);
         }
 
         /// <summary>
@@ -120,12 +120,12 @@ namespace luanDevTools
 
                         Console.WriteLine();
 
-                        Console.WriteLine("    Total Items = " + progressBarMaximum.ToString());
-                        Console.WriteLine("    Done Items  = " + progressBarCurrent.ToString());
 
-
-                        if(progressBarMaximum > 1 && progressBarCurrent > 1)
+                        if(progressBarMaximum > 1 || progressBarCurrent > 1)
                         {
+                            Console.WriteLine("    Total Items = " + progressBarMaximum.ToString());
+                            Console.WriteLine("    Done Items  = " + progressBarCurrent.ToString());
+
                             Console.WriteLine();
                             Console.WriteLine();
                             Console.WriteLine("    " + percent.ToString() + "%");
@@ -138,11 +138,12 @@ namespace luanDevTools
                             }
 
                             Console.WriteLine(output);
-                            Console.WriteLine();
-                            Console.WriteLine();
+                            
                         }
 
-                        
+                        Console.WriteLine();
+                        Console.WriteLine();
+
 
                         if (indexSpinner > spinner.Length - 1)
                             indexSpinner = 1;
